@@ -10,7 +10,8 @@
 <header>  
    <h1>Figuras geometricas</h1> 
 </header>
-
+ 
+  <content class="incio"> 
 <h2>Calcula el area y perimetro de un cuadrado</h2>
 <section> 
 <form>
@@ -28,6 +29,61 @@
     </button>
 </form>
 </section>
+
+<h2>Calcula el area y perimetro de un Triangulo</h2>
+
+<section> 
+<form>
+   <label for="ladoA">
+       Escribe cúanto mide cada lado de tu Triangulo : LadoA
+   </label>
+   <input id="ladoA" type="number"/>
+   <label for="ladoB">
+      LadoB
+    </label>
+    <input id="ladoB" type="number"/>
+    <label for="baseTriangulo">
+      Base
+    </label>
+    <input id="baseTriangulo" type="number"/>
+    <label for="alturaTriangulo">
+       Altura
+    </label>
+    <input id="alturaTriangulo" type="number"/>
+    
+       <button type="button" onclick="calcularPerimetroTriangulo()">
+       Calcular el perimetro
+   </button>
+
+   <button type="button" onclick="calcularAreaTriangulo()">
+    Calcular el área
+    </button>
+</form>
+</section>
+
+<section> 
+
+    
+<h2>Calcula el area, diametro y perimetro de tu circulo </h2>
+    <form>
+       <label for="radio">
+           Radio
+       </label>
+       <input id="radio" type="number"/>
+        
+           <button type="button" onclick="calcularDiametroCirculo()">
+           Calcular el Diametro
+       </button>
+       <button type="button" onclick="calcularPerimetroCirculo()">
+        Calcular el Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+            Calcular el Area
+            </button>
+    </form>
+    </section>
+</content>
+    
 
    <script src="./figuras.js"></script>
 </body>
