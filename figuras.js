@@ -51,6 +51,17 @@ function areaCirculo(radio){
 
 console.groupEnd("Circulos");
 
+
+// Triangulo Isósceles
+
+   function alturaIsosceles(ladoa, ladob, base){
+    const hipotenusa = ladob ** 2;
+    const baseIsosceles = (base / 2);
+    return Math.sqrt((hipotenusa -baseIsosceles));
+
+}
+
+
 //Interactuando con html
 
 //Cuadrado
@@ -114,6 +125,28 @@ function calcularAreaCuadrado(){
 
     const area = areaCirculo (radio);
     alert(area);
-
-
 };
+ 
+function calcularAlturaTrianguloIsosceles(){
+     const lado1 = document.getElementById ("ladoa");
+     const ladoa = parseInt(lado1.value );
+     const lado2 =  document.getElementById ("ladob");
+     const ladob = parseInt (lado2.value);
+     const baseIsosceles = document.getElementById ("base");
+     const base = parseInt (baseIsosceles.value);
+
+     
+
+     if ( ladoa != ladob){
+
+        alert("Tus lados son diferentes, no es un angulo isósceles");
+     }
+
+     else {
+
+        const altura = alturaIsosceles(ladoa, ladob, base)
+
+        alert(altura);
+     }
+
+}
