@@ -8,19 +8,24 @@ html{
 body{
     margin: 0;
 }
-nav{
-    display: flex;
+nav {
+  display: flex;
 }
-.navbar-left img{
-    width: 100px; height: 100px;
-}
-.navbar-left ul, .navbar-right ul{
+
+.navbar-left ul,
+ .navbar-right ul{
     list-style: none;
     padding: 0;
     margin-top: 24px;
     display: flex;
     align-items: center;
    
+}
+.navbar-right {
+  display: flex;
+}
+.navbar-left img{
+  width: 100px; height: 100px;
 }
 
 .tituloPrincipal{
