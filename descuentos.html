@@ -12,7 +12,22 @@
     <title>Porcentajes y descuentos </title>
 </head>
 <body>
-      <nav>   
+    <nav class="nav-principal">
+      <div class="navbar-person-left">
+        <ul>
+          <li>
+            <a href="">Empresa</a>
+          </li>
+          <li> <img src="./iconos y logos/flechita.svg" alt=""></li>
+          <li >
+            <a  class="item-person" href="">Persona</a>
+          </li>
+          <li class="img-person"> <img src="./iconos y logos/flechita.svg" alt=""></li>
+        </ul>
+      </div>
+    </nav>
+
+      <nav>  
         <img src="./iconos y logos/icon_menu.svg" alt="" class="menu">
 
           <div class="navbar-left">
@@ -69,9 +84,9 @@
             <label for="inputCoupons"> Escribe el cupón de descuento por ser cliente VIP</label>
             <input id="inputCoupons" type="text"/>
 
-            <button type="button"  onclick="buttonPriceDiscount()">Calcular el precio con descuento</button>
+            <button type="button"  onclick="buttonPriceDiscount()">Click aqui </button>
 
-            <p id="ResultP"></p>
+            <p class="resultado" id="ResultP"></p>
       
     </form>
   </div>
