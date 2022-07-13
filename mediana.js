@@ -12,6 +12,8 @@ function calcularMediaAritmetica(lista) {
 const lista1 = [
 
 ];
+
+let mediana;
    
 function calculaLaMedianaSalarial(){
   const input1 = document.getElementById("salario1");
@@ -35,37 +37,32 @@ function calculaLaMedianaSalarial(){
 
   console.log (lista1)
 
+  
   const mitadLista1 = parseInt(lista1.length / 2); 
-  alert (mitadLista1);
 
-}
-
-/*const mitadLista1 = parseInt(lista1.length / 2); 
-
- function esPar(numerito) {
-   if (numerito % 2 === 0){
-      return  true;
-   }
-   else {
-     return false;
-   }
-
- };
-
- let mediana; 
-
- 
-    if (esPar(lista1.length)) {
+  function esPar(numerito) {
+    if (numerito % 2 === 0){
+       return  true;
+    }
+    else {
+      return false;
+    }
+   
+   };
+   
+    
+       if (esPar(mitadLista1)) {
         const elemento1 = lista1[mitadLista1 - 1];
         const elemento2 = lista1[mitadLista1];
-      
-        const promedioElemento1y2 = calcularMediaAritmetica([
-          elemento1,
-          elemento2,
-        ]);
-        
-        mediana = promedioElemento1y2;
-      }
-else{
-    mediana = lista1[mitadLista1];
-}*/
+        const promedioElemento1y2 = calcularMediaAritmetica([elemento1, elemento2,]);
+          
+        console.log(elemento1, elemento2);
+           mediana = promedioElemento1y2;
+     
+         }
+   else{
+       mediana = lista1[mitadLista1];
+   }
+   
+};
+
