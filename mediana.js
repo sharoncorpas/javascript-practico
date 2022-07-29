@@ -9,33 +9,19 @@ function calcularMediaAritmetica(lista) {
   }
 
 
-const lista1 = [
-
-];
 
 let mediana;
    
-function calculaLaMedianaSalarial(){
+function añadirSalarios(){
   const input1 = document.getElementById("salario1");
-  const sal1 = parseInt(input1.value);
-
-  const input2= document.getElementById("salario2");
-  const sal2 = parseInt(input2.value);
-  
-  const input3= document.getElementById("salario3");
-  const sal3 = parseInt(input3.value);
-
-  const input4 = document.getElementById("salario4");
-  const sal4 = parseInt(input4.value);
-
-
-  const añadirSalarios = lista1.push(sal1, sal2, sal3, sal4);
-
-  const ordenarSalarios = lista1.sort(function(a,b){
-    return a - b; 
-  });
-
+  const salarios = input1.value;
+  let lista = salarios;
+  let lista1 = lista.split(',').map(i=>Number(i));
   console.log (lista1)
+
+  lista1.sort(function(a,b) {
+    return a-b;
+  });
 
   
   const mitadLista1 = parseInt(lista1.length / 2); 
@@ -64,5 +50,5 @@ function calculaLaMedianaSalarial(){
        mediana = lista1[mitadLista1];
    }
    
-};
+  };
 
