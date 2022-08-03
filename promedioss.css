@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box; margin: 0; padding: 0; 
+}
+    body{
+
+        margin: 0; background: black; font-family: 'Montserrat', sans-serif;
+     }
+     html {
+        font-size: 62.5%; 
+      } 
+      header{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.288);
+        height: 80%;
+        box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.61);
+      }
+      .ancho{
+        width: 80%;
+        height: 80px;
+        background-color: black;
+        margin: auto;
+        display: flex;
+      }
+      .logo{
+        width: 30%;
+        height: 80px;
+        background: black;
+        display: flex;
+  
+      }
+
+      .logo p {
+       margin-top: 15px;
+      
+      }
+      .logo p a {
+        text-decoration: none; color: white;font-size: 40px; padding-left: 28px; font-family: 'Monoton';
+      }
+   
+      nav{
+        width: 70%;
+        height: 80px;
+        background: black;
+      }
+
+      nav ul {
+        list-style: none; display: flex; align-items: center; justify-content: center; margin-top: 32px; 
+      }
+
+      nav ul li a{
+         text-decoration: none;  padding: 12px; font-size: 1.4rem; color: white; 
+         border: 1px solid rgba(128, 128, 128, 0.658); border-radius: 4px; margin-left: 8px; 
+      }
+       .title{
+        display: flex; justify-content: center; margin-top: 54px; font-size: 2rem; color: beige; font-size: 2.0rem;
+       }
+      .title h1 {
+        color: white; font-family: 'Montserrat'; 
+      }
+
+    
+      .container form{
+        display: grid; place-items: center; margin: 32px; 
+      }
+      .container form label{
+       color: white;
+      } 
+    
+      .container input{
+        margin: 20px; width: 360px; height: 32px; border-radius: 4px;
+      }
+      .result-botton{
+        display: grid;  gap: 8px; place-content: center;  grid-template-columns: repeat(3, 210px);
+    
+      }
+      .result-botton div{
+        margin: 8px; background-color: white; width: 200px; height: 200px; border-radius: 4px; box-shadow: -4px -12px 10px -5px rgba(75, 75, 75, 0.932);
+      }
+    
+       button{
+       width: 120px; height: 24px; justify-content: center; border-radius: 4px; margin-left: 40px; margin-top: 18px;
+        border: 1px solid rgba(128, 128, 128, 0.705); background: rgba(128, 128, 128, 0.644); 
+        color: white; font-size: 1.2rem; box-shadow: 2px 2px 2px 1px rgba(75, 75, 75, 0.61);
+      }
+      
+    
+      button:hover{
+         background-color: beige; color: rgb(54, 54, 54);
+      }
+      .result-botton p{
+        color: black; font-size: 1.2rem; font-family: sans-serif; margin-top: 48px; margin-left: 58px; font-size: 2.0rem;
+         color: rgb(54, 53, 53); 
+      }
+
+      @media (max-width: 740px) {
+        .logo{
+          width: 80%;    
+        }
+        nav{
+          width: 70%;
+          height: 80px;
+          background: black;
+        }
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .result-botton{
+            width: 100%; height: auto; grid-template-columns: repeat(1, 210px);
+        }
+        nav ul {
+          list-style: none; display: none;
+        }
+    }
+ 

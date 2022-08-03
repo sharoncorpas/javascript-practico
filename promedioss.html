@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Josefin+Sans:wght@300;400&family=Monoton&family=Montserrat:wght@100&family=Quicksand:wght@300;500;700&family=Raleway:wght@100;200;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promedioss.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div class="ancho">
+            <div class="logo">
+                <p> <a href="">MathApp</a></p>
+            </div>
+
+    <nav>
+        <div class="navbar-left">
+      
+         <ul>
+          <li> <a href="">Calculo</a> </li>
+
+          <li><a href="">Matematicas</a> </li>
+
+          <li> <a href="">Geometria</a> </li>
+
+          <li> <a href="">Estadistica</a></li>
+        
+    </nav>
+</div>
+</header>
+    
+    <section class="title" >
+    <h1 > Calcula media, mediana y moda  </h1>
+     </section>
+    
+
+    <section class="container">
+     
+            <form>
+            <label for="salario1">Ingresa tu grupo de numeros</label>
+            <input  type="text" id="salario1">
+
+              <div class="result-botton"> 
+
+                <div>  
+                    <button type="button" onclick="calcularMediaAritmetica()">Media </button>
+                    <p class="resultado-media" id="resultMedia"></p>
+                </div>    
+                <div>  
+                    <button type="button" onclick="calcularMediana()">Mediana </button>
+                    <p class="resultado-mediana" id="resultMediana"></p>
+                </div>
+                <div>
+                  <button type="button" onclick="calcularModa()">Moda </button>
+                  <p class="resultado-moda" id="resultModa"></p>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+
+    <script src="promedioss.js"></script>
+</body>
+</html>
